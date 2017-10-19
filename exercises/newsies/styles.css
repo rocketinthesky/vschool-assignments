@@ -1,0 +1,32 @@
+h1 {
+  text-align: center;
+}
+
+h2 {
+  font-family: "Goudy Bookletter 1911", sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Goudy Bookletter 1911", sans-serif;
+  padding: 10px;
+}
+
+p {
+  font-family: "Goudy Bookletter 1911", sans-serif;
+  line-height: 1.5em;
+  float: left;
+  width: 25%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+img {
+  padding: 20px;
+}
+
+#content {
+  position: relative;
+  width: 66%;
+}
