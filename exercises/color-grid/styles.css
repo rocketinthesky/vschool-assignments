@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    font-size: 0px;
+}
+
+body {
+  width: 53%;
+  margin: 0 auto;
+}
+
+div {
+  height: 120px;
+  border: white solid 5px;
+  display: inline-block;
+}
+
+#pink {
+  width: 100%;
+  background-color: #F5C6D6;
+}
+
+.red {
+  width: 25%;
+  background-color: #EE2E84;
+}
+
+.blue {
+  width: 50%;
+  background-color: #85CFD8;
+}
+
+#green {
+  width: 75%;
+  background-color: #8DC63F;
+}
+
+#orange {
+  width: 25%;
+  background-color: #E76E34;
+}

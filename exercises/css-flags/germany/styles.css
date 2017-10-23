@@ -1,0 +1,21 @@
+body {
+  width: 800px;
+  height: 500px;
+  position: relative;
+}
+
+div {
+  height: 33%;
+  width: 100%;
+}
+.black {
+  background-color: black;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellowish {
+  background-color: #FECD2F;
+}

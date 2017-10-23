@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    font-size: 0px;
+}
+
+body {
+  width: 1000px;
+  height: 600px;
+  position: relative;
+  border: black dotted;
+  background-color: white;
+}
+
+div {
+  position: absolute;
+}
+
+.flag {
+  height: 100%;
+  width: 100%;
+  background-color: #D01639;
+}
+
+.square {
+  background-color: #0F7D3D;
+  height: 50%;
+  width: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.moon {
+  background-color: white;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  top: 50%;
+  right: 25%;
+  transform: translate(-50%, -50%);
+}
+
+.shadow {
+  background-color: #0F7D3D;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  top: 50%;
+  right: 21%;
+  transform: translate(-50%, -50%);
+}

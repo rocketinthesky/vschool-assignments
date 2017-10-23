@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    font-size: 0px;
+}
+
+body {
+  width: 1000px;
+  height: 600px;
+  position: relative;
+  border: black dotted;
+}
+
+.blue {
+  background-color: #0E6BA5;
+  height: 100%;
+  width: 100%;
+}
+
+.bar {
+  background-color: #FDCB2F;
+  position: absolute;
+}
+
+.vertical {
+  height: 100%;
+  width: 10%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-200%, -50%);
+}
+
+.horizontal {
+  height: 15%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

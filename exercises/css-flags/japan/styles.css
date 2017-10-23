@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    font-size: 0px;
+}
+
+body {
+  width: 1000px;
+  height: 600px;
+  position: relative;
+  border: black dotted;
+  background-color: white;
+}
+
+.red {
+  background-color: #BF0712;
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
