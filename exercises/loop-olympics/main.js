@@ -91,6 +91,5 @@ var zeroes = []
 
 for (i = 0; i < 3; i++) {
   zeroes.push([0, 0, 0]);
-} for ()
-
+}
   console.log(zeroes);

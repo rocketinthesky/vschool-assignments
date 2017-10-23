@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    font-size: 0px;
+}
+
+body {
+  width: 1000px;
+  height: 600px;
+  position: relative;
+  border: black dotted;
+  background-color: white;
+}
+
+div {
+  position: absolute;
+}
+
+.stripe {
+  background-color: #1660AD;
+  height: 66px;
+  width: 100%;
+}
+
+.one {
+  top: 0;
+}
+
+.two {
+  top: 25%;
+  transform: translateY(-25%);
+}
+
+.three {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.four {
+  bottom: 25%;
+  transform: translateY(25%);
+}
+
+.five {
+    bottom: 0;
+}
+
+.square {
+  background-color: #1660AD;
+  height: 50%;
+  width: 33%;
+}
+
+.vertical {
+  background-color: white;
+  height: 60%;
+  width: 75px;
+  left: 13%;
+  transform: translateX(-13%);
+}
+
+.horizontal {
+  background-color: white;
+  height: 66px;
+  width: 33%;
+  top: 25%;
+  transform: translateY(-25%);
+}
+
+/*
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+*/

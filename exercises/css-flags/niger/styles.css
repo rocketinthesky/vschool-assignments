@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    font-size: 0px;
+}
+
+body {
+  width: 1000px;
+  height: 600px;
+  position: relative;
+  border: black dotted;
+  background-color: white;
+}
+
+div {
+  position: absolute;
+}
+
+.orange {
+  background-color: #DE531D;
+  height: 33%;
+  width: 100%;
+  top: 0;
+}
+
+.green {
+  background-color: #1FAE35;
+  height: 33%;
+  width: 100%;
+  bottom: 0;
+}
+
+.circle {
+  background-color: #DE531D;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
