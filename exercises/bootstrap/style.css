@@ -1,7 +1,14 @@
-#brand {
-  color: #E80C26;
+div.row {
+  background-color: red;
 }
 
-#container {
-  background-color: #ffd1dc;
+div.col-xs-4 {
+  background-color: blue;
+  height: 100px;
+  border: solid black 2px;
+}
+
+.container {
+  background-color: green;
+  height: 200px;
 }
