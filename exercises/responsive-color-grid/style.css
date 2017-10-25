@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    font-size: 0px;
+}
+
+body {
+  width: 600px;
+}
+
+div {
+  display: inline-block;
+  border: white solid 3px;
+  padding: 40px;
+}
+
+.pink {
+  width: 100%;
+  background-color: #F5C6D6;
+}
+
+.red {
+  width: 25%;
+  background-color: #EE2E84;
+}
+
+.blue {
+  width: 50%;
+  background-color: #85CFD8;
+}
+.green {
+  width: 75%;
+  background-color: #8DC63F;
+}
+
+.orange {
+  width: 25%;
+  background-color: #E76E34;
+}
+
+@media (max-width: 768px) {
+  div {
+    width: 100% !important;
+  }
+}

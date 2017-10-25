@@ -1,0 +1,24 @@
+body {
+  width: 960px;
+  position: absolute;
+}
+
+.header{
+position: fixed;
+background-color: gray;
+height: 100px;
+width: 960px;
+}
+
+.main{
+background-color: darkgray;
+height: 700px;
+}
+
+.footer{
+position: fixed;
+bottom: 0;
+background-color: gray;
+height: 120px;
+width: 960px;
+}

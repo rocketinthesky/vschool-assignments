@@ -1,0 +1,44 @@
+body {
+  width: 960px;
+}
+
+h1 {
+  left: 50%;
+  transform: translateX(50%);
+}
+
+h2 {
+  left: 50%;
+  transform: translateX(50%);
+}
+
+ul {
+  left: 50%;
+  transform: translateX(50%);
+}
+
+img {
+  display: block;
+  height: 150px;
+  width: 150px;
+}
+
+p {
+  display: inline-block;
+  padding: 20px;
+}
+
+button {
+  display: inline-block;
+}
+
+div {
+  display: inline-block;
+  left: 50%;
+  transform: translateX(50%);
+}
+
+footer {
+  /*left: 50%;*/
+  transform: translateX(20%);
+}
