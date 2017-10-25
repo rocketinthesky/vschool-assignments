@@ -1,0 +1,33 @@
+.one {
+  width: 800px;
+}
+
+.pink {
+  background-color: #F5C6D6;
+  height: 125px;
+  border: solid white 5px;
+}
+
+.red {
+  background-color: #EE2E84;
+  height: 125px;
+  border: solid white 5px;
+}
+
+.blue {
+  background-color: #85CFD8;
+  height: 125px;
+  border: solid white 5px;
+}
+
+.green {
+  background-color: #8DC63F;
+  height: 125px;
+  border: solid white 5px;
+}
+
+.orange {
+  background-color: #E76E34;
+  height: 125px;
+  border: solid white 5px;
+}

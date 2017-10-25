@@ -1,16 +1,10 @@
-// var stringE = function(str) {
-//   console.log(str.match(/e/gi).length);
-// }
-//
-// stringE('Heelele');
-
-
-var stringE=function(str){
-	if (str.match(/e/gi).length >= 1 && str.match(/e/gi).length <= 3) {
-    	console.log(true);
-    } else if (str.match(/e/gi).length < 1 || str.match(/e/gi).length > 3){
-    	console.log(false);
-    }
+var everyNth=function(str, n){
+	newStr = "";
+	for (i = 0; i < str.length; i++)
+      if (i % n === 0) {
+      	newStr += str.charAt(i);
+      }
+  console.log(newStr);
 }
 
-stringE('ll')
+everyNth('Chocolates', 4)
