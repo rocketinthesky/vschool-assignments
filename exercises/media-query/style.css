@@ -1,0 +1,30 @@
+.box {
+  height: 500px;
+  width: 500px;
+  background-color: black;
+  display: inline-block;
+}
+
+@media (max-width: 1000px) {
+  .box {
+    height: 300px;
+    width: 300px;
+    background-color: green;
+  }
+}
+
+@media (max-width: 800px) {
+  .box {
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+  }
+}
+
+@media (max-width: 600px) {
+  .box {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+  }
+}
