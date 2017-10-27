@@ -1,0 +1,46 @@
+@font-face {
+    font-family: Mario256;
+    src: url(SuperMario256.ttf);
+}
+
+h1 {
+  font-family: Mario256;
+  color: #E8232C;
+}
+
+#luigi {
+    padding: 10px 80px;
+    font-size: 5em;
+}
+
+.one {
+  background-color: #FED833;
+  height: 120px;
+}
+
+.two {
+  background-color: #E8232C;
+}
+
+#about {
+  font-size: 4em;
+}
+
+.three {
+  color: #E8232C;
+  text-align: center;
+}
+
+#bio {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.four {
+  background-color: #FED833;
+  height: 90px;
+}
+
+#mushroom {
+  padding: 8px;
+}
