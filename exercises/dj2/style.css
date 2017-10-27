@@ -1,0 +1,62 @@
+div {
+  height: 100px;
+  width: 100px;
+  border: dotted black 1px;
+  display: inline-block;
+  margin: 20px;
+  padding: 20px;
+}
+
+.one {
+
+}
+
+.one:hover {
+  background-color: #4169e1;
+  border: solid #4169e1;
+  box-shadow: 5px 5px 5px #0000cd;
+}
+
+.two {
+  transition: box-shadow ease-in 1s .2s;
+}
+
+.two:hover {
+  border: solid #FF1493;
+  box-shadow: 0px 0px 20px #FF1493;
+}
+
+.three {
+  transition: all 1s .2s ;
+}
+
+.three:hover {
+  background-color: red;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.four {
+  transition: all 6s .2s ;
+}
+
+.four:hover {
+  border: solid;
+  height: 600px;
+  width: 600px;
+  background-color: #696969;
+}
+
+.five {
+  transition: all 3s .2s ;
+}
+
+.five:hover {
+  padding: 100px;
+  margin: 100px;
+}
+
+.six:hover {
+
+}
