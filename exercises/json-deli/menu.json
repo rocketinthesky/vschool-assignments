@@ -1,0 +1,57 @@
+{
+  "hot sandwiches":[{
+    "name": "Pepe",
+    "ingredients": ["Ham", "provolone", "lettuce", "tomato", "mayo"],
+    "description": "Basic sandwich but still really good"
+    },
+    {
+      "name": "Totally Tuna",
+      "ingredients": ["Tuna", "cucumber", "lettuce", "tomato"],
+      "description": "Fresh, homemade tuna sandwich"
+    }
+],
+  "cold sandwiches":[{
+    "name": "Hunter's Club",
+    "ingredients": ["Double roast beef", "provolone", "lettuce", "tomato", "mayo"],
+    "description": "1/4 lb of roast beef and double everything else"
+    },
+    {
+      "name": "Italian Night Club",
+      "ingredients": ["Genoa salami", "capicola", "ham", "provolone", "lettuce", "tomato", "onions", "mayo", "vinaigrette"],
+      "description": "A delicious sandwich that'll make you think you're at a club in Italy.......at night"
+      }
+  ],
+  "appetizers":[{
+    "name": "Potato Chips",
+    "ingredients": ["fried potato chips", "salt"],
+    "description": "Standard bag of potato chips"
+    },
+    {
+      "name": "Salt & Vinegar Chips",
+      "ingredients": ["fried potato chips", "salt", "vinegar"],
+      "description": "Potato chips with a tangy vinegar flavor"
+    }
+  ],
+  "desserts":[{
+    "name": "Chocolate chip cookies",
+    "ingredients": ["cookie", "chocolate chips"],
+    "description": "Old-fashioned chocolate chip cookies"
+  },
+  {
+    "name": "Oatmeal raisin cookies",
+    "ingredients": ["cookies", "raisins"],
+    "description": "Old-fashioned oatmeal raisin cookies"
+  }
+],
+  "drinks":[{
+    "name": "Coca-cola",
+    "ingredients": ["carbonated water", "high-fructose corn syrup", "artificial flavors"],
+    "description": "Coca-cola Classic"
+    },
+    {
+      "name": "Dr. Pepper",
+      "ingredients": ["carbonated water", "high-fructose corn syrup", "artificial flavors"],
+      "description": "23 Flavors combined into one delicious beverage"
+    }
+  ]
+}
