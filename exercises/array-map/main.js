@@ -28,12 +28,12 @@ var firstArray = [2, 5, 100];
 // }
 
 function stringItUp(arr){  //using map method
-  console.log(arr);
   var stringedArray = [];
-  return arr.map(function(num){
-    return stringedArray.push(num.toString());
-  })
 
+  arr.map(function(num){
+    stringedArray.push(num.toString());
+  })
+    console.log(stringedArray);
 }
 stringItUp(firstArray);
 
@@ -44,6 +44,39 @@ stringItUp(firstArray);
 // }
 //
 // console.log(namesOnly([
+//   {
+//     name: "Angelina Jolie",
+//     age: 80
+//   },{
+//     name: "Eric Jones",
+//     age: 2
+//   },{
+//     name: "Paris Hilton",
+//     age: 5
+//   },{
+//     name: "Kayne West",
+//     age: 16
+//   },{
+//     name: "Bob Ziroll",
+//     age: 100
+//   }
+// ]));
+//
+// function thereIsNoSpoon(arr){
+//   var checkID = function(){
+//     if (person.age < 18) {
+//       return " is under age!!";
+//     } else {
+//       return " can go to the Matrix";
+//   }
+//     return arr.map(function(person){
+//       return (person.name + checkID)
+//       console.log(checkID);
+//       });
+//     }
+// }
+//
+// console.log(thereIsNoSpoon([
 //   {
 //     name: "Angelina Jolie",
 //     age: 80
