@@ -1,7 +1,7 @@
 var chai = require('chai');
 var assert = chai.assert;
 var search = require('./app.js').search;
-var addWord = require('./apps.js').add;
+var addWord = require('./app.js').addWord;
 
 describe("a dictionary to add and look up words on a list", function(){
   it("should return the definition if it's on the list", function() {
