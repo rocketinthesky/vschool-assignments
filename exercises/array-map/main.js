@@ -19,7 +19,7 @@
 // doubleNumbers(firstArray);
 
 var firstArray = [2, 5, 100];
-
+var stringedArray = [];
 
 // function stringItUp(arr){  //using for loop
 //   for (i = 0; i < arr.length; i++){
@@ -28,8 +28,6 @@ var firstArray = [2, 5, 100];
 // }
 
 function stringItUp(arr){  //using map method
-  var stringedArray = [];
-
   arr.map(function(num){
     stringedArray.push(num.toString());
   })

@@ -8,7 +8,7 @@ axios.get("https://api.vschool.io/neilwagner/todo").then(function(response){
     var newTodo = {"title": document.getElementById("title").value}
 console.log(newTodo);
   axios.post("https://api.vschool.io/neilwagner/todo", newTodo).then(function(response) {
-    var newTodo = response.data;
+    // newTodo = response.data;
     document.getElementById("todos").innerHTML += "<div>" +  response.data.title + "</div>";
   });
 })

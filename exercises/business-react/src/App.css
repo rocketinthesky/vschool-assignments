@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffb3ba;
+}
+
+#info {
+  background-color: #ffffba;
+}
+
+#list {
+  background-color: #baffc9;
+}
+
+#images {
+  background-color: #bae1ff;
+}
+
+#footer {
+  background-color: #fff0f5;
+}
