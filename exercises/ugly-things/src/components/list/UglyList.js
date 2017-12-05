@@ -16,7 +16,6 @@ const liStyles = {
   height: "200px",
   float: "left",
   margin: "10px",
-  border: "1px solid black"
 }
 
 const imageStyle = {
