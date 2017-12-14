@@ -1,0 +1,18 @@
+.navbar {
+    background-color: whitesmoke;
+}
+
+.navbar a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.navbar a:visited {
+    color: blue;
+}
+
+.navbar a:hover {
+    color: firebrick;
+}
