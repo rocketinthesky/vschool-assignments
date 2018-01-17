@@ -1,20 +1,35 @@
 import React from "react";
-import { compose, withProps } from "recompose";
-import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps";
+// import { compose, withProps } from "recompose";
+// import { withScriptjs, withGoogleMap, GoogleMap, Marker, InfoWindow } from "react-google-maps";
 import FaIconPack from 'react-icons/lib/fa';
-// import server from "../../server/server";
 
-// const shadesOfGrey = require("./MapStyles/shades-of-grey.json");
-// const redHues = require("./MapStyles/red-hues.json");
-// const fish = require("./MapStyles/fish.json");
+const { compose, withProps, withStateHandlers } = require("recompose");
+const FaAnchor = require("react-icons/lib/fa/anchor");
+const FaAndroid = require("react-icons/lib/fa/android");
+
+const {
+  withScriptjs,
+  withGoogleMap,
+  GoogleMap,
+  Marker,
+  InfoWindow,
+} = require("react-google-maps");
+
 const batesGreen = require("./MapStyles/bates-green.json");
 
-const MyMapComponent = compose(
+const Map = compose(
   withProps({
     googleMapURL: "https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places",
     loadingElement: <div style={{ height: `100%` }} />,
-    containerElement: <div style={{ height: `94vh` }} />,
+    containerElement: <div style={{ height: `92vh` }} />,
     mapElement: <div style={{ height: `100%` }} />,
+  }),
+  withStateHandlers(() => ({
+    isOpen: false,
+  }), {
+    onToggleOpen: ({ isOpen }) => () => ({
+      isOpen: !isOpen,
+    })
   }),
   withScriptjs,
   withGoogleMap
@@ -24,7 +39,22 @@ const MyMapComponent = compose(
     defaultCenter={{ lat: 41.397, lng: -111.644 }}
     defaultOptions={{styles: batesGreen}}
   >
-    {props.isMarkerShown && <Marker position={{ lat: 41.397, lng: -111.644 }} onClick={props.onMarkerClick} />}
+    <Marker
+      position={{ lat: 41.397, lng: -111.644 }}
+      onClick={props.onToggleOpen}
+    >
+      {props.isOpen && <InfoWindow onCloseClick={props.onToggleOpen}>
+        <FaAndroid />
+      </InfoWindow>}
+    </Marker>
+    <Marker
+      position={{ lat: 41.397, lng: -112.644 }}
+      onClick={props.onToggleOpen}
+    >
+      {props.isOpen && <InfoWindow onCloseClick={props.onToggleOpen}>
+        <FaAnchor />
+      </InfoWindow>}
+    </Marker>
   </GoogleMap>
 )
 
@@ -50,7 +80,7 @@ class MyFancyComponent extends React.PureComponent {
 
   render() {
     return (
-      <MyMapComponent
+      <Map
         isMarkerShown={this.state.isMarkerShown}
         onMarkerClick={this.handleMarkerClick}
       />
@@ -58,4 +88,4 @@ class MyFancyComponent extends React.PureComponent {
   }
 }
 
-export default MyMapComponent;
+export default Map;

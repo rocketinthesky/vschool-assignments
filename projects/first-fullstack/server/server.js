@@ -5,7 +5,6 @@ const bodyParser = require("body-parser");
 const morgan = require("morgan");
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
-const uuidv4 = require('uuid/v4');
 
 app.use(bodyParser.json());
 app.use(morgan("dev"));
@@ -19,7 +18,7 @@ mongoose.connect(`mongodb://localhost/${port}`,
     }
 );
 
-const EntrySchema = new Schema ({
+const AddEntry = new Schema ({
   date: {
     type: Date,
     default: Date.now
@@ -28,21 +27,16 @@ const EntrySchema = new Schema ({
     lat: Number,
     long: Number
   },
-  description: String,
-  id: String
+  description: String
 })
 
-// Check if the server is working correctly
-// app.get("/", (req, res) => {
-//     res.send("It's working!");
-// });
+const add = mongoose.model(`AddEntry`, AddEntry);
 
-// const server = () => {}
 
 app.use(express.static("client/src"));
 
 app.get(`/entries`, (req, res) => {
-  EntrySchema.find((err, entries) => {
+  add.find((err, entries) => {
     if (err) return res.status(500).send(err);
     res.send(entries);
   })
@@ -50,16 +44,18 @@ app.get(`/entries`, (req, res) => {
 
 app.get(`/entries/:id`, (req, res) => {
   let {entry} = request.params
-  new EntrySchema({entry}).save((err, savedEntry) => {
+  new add({entry}).save((err, savedEntry) => {
     if (err) return res.status(500).send(err);
     res.send(savedEntry);
   })
 });
 
 app.post("/entries", (req, res) => {
-  req.body.id = uuidv4();
-  entries.push(req.body);
-  return res.send({message: "Entry added:", object: req.body});
+  let newEntry = new add(req.body);
+  newEntry.save((err, item) => {
+    if (err) return res.status(500).send(err);
+    res.send(item);
+  })
 });
 
 app.delete(`/entries/:id`, (req, res) => {
@@ -69,7 +65,7 @@ app.delete(`/entries/:id`, (req, res) => {
 })
 });
 
-app.put("/bounty/:id", (req, res) => {
+app.put("/entries/:id", (req, res) => {
 const index = entries.findIndex(item => item.id === req.params.id);
 const foundEntry = entries[index];
 for (let prop in foundEntry) {
@@ -82,5 +78,3 @@ if (foundEntry.hasOwnProperty(prop)) {
 app.listen(port, () => {
     console.log(`Server is listening on port ${port} starting at ${new Date()}`);
 });
-
-// export default server;

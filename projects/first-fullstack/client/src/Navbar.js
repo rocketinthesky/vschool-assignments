@@ -1,11 +1,20 @@
 import React from "react";
 
+const NavLink = require("react-router-dom").NavLink;
+
 export default function Navbar(props) {
   return (
-    <nav className="navbar">
-      <a href="/">Home</a>
-      <a href="/add">Add Entry</a>
-      <a href="/entries">View Entries</a>
-    </nav>
+    <ul className="navbar">
+      <NavLink to='/'>
+        <li>
+          Map
+        </li>
+      </NavLink>
+      <NavLink to='/entries'>
+        <li>
+          Entries
+        </li>
+      </NavLink>
+    </ul>
   )
 }

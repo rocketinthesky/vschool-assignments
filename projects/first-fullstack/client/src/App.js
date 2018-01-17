@@ -1,13 +1,24 @@
 import React, {Component} from "react";
 import Navbar from "./Navbar";
-import MyMapComponent from "./Map";
-// import StyledMapWithAnInfoBox from "./TestMap";
+import Map from "./Map";
+import Entries from "./Entries";
 
-export default function App(props) {
-  return (
-    <div>
-      <Navbar />
-      <MyMapComponent />
-    </div>
-  )
+const ReactRouter = require("react-router-dom");
+const Router = ReactRouter.BrowserRouter;
+const Route = ReactRouter.Route;
+
+class App extends Component {
+  render() {
+    return(
+      <Router>
+        <div>
+          <Navbar />
+          <Route exact path="/" component={Map} />
+          <Route path="/entries" component={Entries} />
+        </div>
+      </Router>
+    )
+  }
 }
+
+export default App;

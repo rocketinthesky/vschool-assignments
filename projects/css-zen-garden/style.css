@@ -1,0 +1,11 @@
+.intro, .summary, .preamble, .main, .supporting {
+  display: block;
+  float: left;
+  width: 50%;
+}
+
+aside {
+  display: block;
+  float: right;
+  width: 50%;
+}
